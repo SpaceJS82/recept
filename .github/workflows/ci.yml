@@ -47,12 +47,10 @@ jobs:
             ${{ runner.os }}-maven-
 
       # Install Maven
-      - name: Set up Maven
-        uses: actions/setup-java@v3
-        with:
-          java-version: 21
-          maven-version: '3.x'
-          distribution: ''
+      - name: Install Maven
+        run: |
+          sudo apt-get update
+          sudo apt-get install maven
 
       # Run tests
       - name: Run tests
