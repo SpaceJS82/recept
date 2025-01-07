@@ -50,7 +50,7 @@ jobs:
         with:
           java-version: 21
           maven-version: '3.x'
-          distribution: ''
+          distribution: 'temurin'
 
       # Run tests
       - name: Run tests
